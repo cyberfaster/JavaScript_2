@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Пример 2_5</title>
+</head>
+<body>
+<script>
+//объявляем массив как экземпляр класса Array
+let month_names = new Array("January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December");
+//создаем экземпляр класса Date
+let d = new Date();
+//создаем переменную и получаем день месяца из экземпляра d
+let current_date = d.getDate();
+[Введите текст] [Введите текст] [Введите текст]
+//создаем переменную и получаем номер месяца из экземпляра d
+//при чем счет месяцев идет с нуля
+let current_month = d.getMonth();
+//создаем переменную и получаем год в виде 4х чисел
+let current_year = d.getFullYear();
+alert("day - "+current_date+" ; month - " +current_month + " ; year - "+current_year);
+if (current_month ==0) {
+alert('На дворе январь'+ " ; "+ month_names[current_month]);
+}
+else if (current_month == 1) {
+alert(' На дворе февраль'+ " ; "+ month_names[current_month]);
+}
+else {
+alert('Месяц науке не известен!');
+}
+</script> </body> </html>
